@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Cryptocurrency</string>
+    <string name="fab_content_description">Add Item</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="don_t_receive_the_otp">Don\'t receive the OTP?</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify">Verify</string>
+    <string name="enter_otp_sent_to">Enter OTP sent to</string>
+
+    <string-array name="country_names">
+        <item>Oman</item>
+        <item>UAE</item>
+        <item>Saudi Arabia</item>
+        <item>Qatar</item>
+        <item>Bahrain</item>
+        <item>Kuwait</item>
+        <!-- Add more country names here -->
+    </string-array>
+
+    <string-array name="country_codes">
+        <item>+968</item> <!-- Oman -->
+        <item>+971</item> <!-- UAE -->
+        <item>+966</item> <!-- Saudi Arabia -->
+        <item>+974</item> <!-- Qatar -->
+        <item>+973</item> <!-- Bahrain -->
+        <item>+965</item> <!-- Kuwait -->
+        <!-- Add corresponding country codes here -->
+    </string-array>
+
+</resources>

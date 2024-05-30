@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#130041"
+    tools:context=".Activitis.IntroActivity" >
+
+    <ImageView
+        android:id="@+id/circle_top_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_top_splash" />
+
+    <ImageView
+        android:id="@+id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/credit33" />
+
+    <TextView
+        android:id="@+id/CipherCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="CipherCash"
+        android:textColor="#ffffff"
+        android:textSize="41sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credit" />
+
+    <TextView
+        android:id="@+id/Learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn more about
+                              cryptocurrencies look to the future"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/CipherCash"
+        app:layout_constraintStart_toStartOf="@+id/CipherCash"
+        app:layout_constraintTop_toBottomOf="@+id/CipherCash" />
+
+    <ImageView
+        android:id="@+id/goBtn"
+        android:layout_width="98dp"
+        android:layout_height="123dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Learn"
+        app:srcCompat="@drawable/intro_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

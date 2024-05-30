@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cryptocurrency">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Cryptocurrency"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cryptocurrency">
+
+        <activity
+            android:name=".Activitis.EnterOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitis.EditProfilePopupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitis.SittingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitis.WalletActivity"
+            android:exported="false" /> <!-- ProfileActivity -->
+        <activity
+            android:name=".Activitis.ProfileActivity"
+            android:exported="false" /> <!-- VerifyActivity -->
+        <activity
+            android:name=".Activitis.RegisterActivity"
+            android:exported="false" /> <!-- IntroActivity -->
+        <activity
+            android:name=".Activitis.SendOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitis.IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- LoginActivity -->
+        <activity
+            android:name=".Activitis.LoginActivity"
+            android:exported="false" /> <!-- MainActivity -->
+        <activity
+            android:name=".Activitis.MainActivity"
+            android:exported="false" /> <!-- MyFirebaseMessagingService -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
